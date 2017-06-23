@@ -1,0 +1,26 @@
+1.Action
+	如： StuentAction 
+
+	action里面的方法 如：studentSave ,return "save"
+			   studentPager, return "pager",
+			   这里的bean名用student,
+			action里面的属性该提供set方法就提供set方法，不要提供的set方法就不要提供
+DAO 
+	如：StudentDAO
+		
+		
+Service
+	如：StudentService
+
+2.jsp页面所有页面都放在WEB-INF，pages下面，然后再分模块，一个模块一个文件夹，如：student，employee，
+模块文件夹的jsp页面，如: student_home.jsp  就是 :  模块_*.jsp
+pages
+下面home.jsp ，有很多导航每个导航都要通过action转发到另一个页面，我们放在自己的action, struts 里面进行转发，action 方法也就是url 都以这个方式命名: showReserve, 就是 ：show*  	return “show*”
+
+3.配置命名
+配置文件都放在WEB-INF，config下面
+如：struts-student.xml
+    spring-student.xml
+
+
+

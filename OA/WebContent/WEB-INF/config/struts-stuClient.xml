@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+        <!-- 郭昶 struts-course配置文件 -->
+<struts>
+	<package name="stuClient-struts" extends="my-struts" namespace="/sc">
+		<action name="*" class="com.oa.action.StuClientAction" method="{1}">
+			<result name="showStuScoreHome">/WEB-INF/pagers/stuClient/student_score.jsp</result>
+			<result name="showGoodsHome">/WEB-INF/pagers/stuClient/goods.jsp</result>
+			<result name="showStuLeaveHome" >/WEB-INF/pagers/stuClient/student_leave.jsp</result>
+			<result name="showStuFeedbackHome" >/WEB-INF/pagers/stuClient/student_feedback.jsp</result>
+			<result name="showStuCheckingHome" >/WEB-INF/pagers/stuClient/student_checking.jsp</result>
+			<result name="showStuHome">/WEB-INF/pagers/stuClient/stu-user.jsp</result>
+			<result name="showNoticeHome">/WEB-INF/pagers/stuClient/notice.jsp</result> 	
+			<result name="showpager" type="json"></result>
+		</action>
+	</package>
+	
+</struts>

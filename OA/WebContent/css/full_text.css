@@ -1,0 +1,32 @@
+
+	.edui_default{
+		margin:2px;
+	}
+	.bold {
+		background-position:-10px -10px
+	}
+	.italic{
+		background-position:-40px -10px
+	}
+	.underline{
+		background-position:-70px -10px;
+	}
+	.justifycenter{
+		background-position:-255px -10px;
+	}
+	.justifyleft{
+		background-position:-225px -9px;
+	}
+	.justifyright{
+		background-position:-285px -10px;
+	}
+	.outBox{
+		border:1px solid rgba(0,0,0,0.2);
+	}
+	.edui_box:after{
+		content:"|";
+		margin:22px;
+		position:relative;
+		top:-4px;
+		color:rgba(0,0,0,0.1)
+	}
